@@ -1,0 +1,15 @@
+.video-item {
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  padding: 10px; }
+  .video-item:last-of-type {
+    border-bottom: 1px solid gray; }
+  .video-item__image {
+    width: 100%;
+    height: auto;
+    border-radius: 3px; }
+  .video-item__title {
+    width: 100%;
+    text-align: left;
+    font-size: 20px; }
