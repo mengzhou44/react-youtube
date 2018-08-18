@@ -12,7 +12,7 @@ export default (props) => {
                 onClick={() => { props.onVideoSelected(video) }}
             >
 
-                <img className="video-item__image" src={video.snippet.thumbnails.default.url} />
+                <img className="video-item__image" src={video.snippet.thumbnails.default.url} alt="video" />
 
                 <div className="video-item__title" >{video.snippet.title}</div>
             </li>)}
