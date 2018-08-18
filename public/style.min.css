@@ -4,7 +4,7 @@
 .icon {
   height: 1.4rem;
   width: 1.4rem;
-  fill: #FFF !important; }
+  fill: #333 !important; }
 
 .radio-group {
   display: inline-block;
@@ -51,7 +51,7 @@
   .search-bar input {
     font-size: 15px;
     font-family: inherit;
-    color: #f58426;
+    color: #333;
     font-weight: 400;
     padding: 10px 15px;
     width: 50% !important;
@@ -65,8 +65,8 @@
     cursor: pointer;
     padding: 9px 15px;
     text-decoration: none;
-    background-color: #f58426;
-    border: 1px solid #f58426;
+    background-color: #f8f8f8;
+    border: 1px solid lightgray;
     color: #FFF;
     transition: all .2s;
     border-radius: 3px;
@@ -74,7 +74,6 @@
     .search-bar button:hover {
       transform: translateY(-0.3rem);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-      border: 1px solid #cf6d17;
       color: #FFF;
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px; }

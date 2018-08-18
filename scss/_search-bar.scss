@@ -8,7 +8,7 @@
     input {
         font-size: 15px;
         font-family: inherit;
-        color:  $color-orange;
+        color:  $color-light-black;
         font-weight: 400;
         padding: 10px 15px; 
         width: 50% !important;
@@ -29,9 +29,9 @@
        
         padding: 9px 15px;
         text-decoration: none;
-        background-color: $color-orange;
+        background-color: rgb(248,248,248);
         
-        border: 1px solid $color-orange;
+        border: 1px solid rgb(211,211,211);
         color: $color-white;
        
         transition: all .2s;
@@ -43,7 +43,6 @@
         &:hover {
             transform: translateY(-0.3rem);
             box-shadow: 0 1rem 2rem rgba($color-black, 0.2); 
-            border: 1px solid $color-dark-orange;
             color: $color-white;
             border-top-left-radius: 3px;
             border-bottom-left-radius: 3px; 
