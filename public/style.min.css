@@ -44,17 +44,14 @@
 
 .search-bar {
   margin: 30px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  text-align: center; }
   .search-bar input {
     font-size: 15px;
     font-family: inherit;
     color: #333;
     font-weight: 400;
     padding: 10px 15px;
-    width: 50% !important;
+    width: 100%;
     background-color: #FFF;
     border: 1px solid #cccccc;
     border-radius: 3px; }

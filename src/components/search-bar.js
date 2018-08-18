@@ -51,49 +51,52 @@ export default class SearchBar extends Component {
                 this.searchVideos();
             }}
         >
-            <input type='text'
-                value={this.state.term}
-                onChange={e => this.setState({ term: e.target.value })}
-            />
-            <div>
-                <div className="radio-group">
-                    <input type="radio"
-                        checked={this.state.order === "viewCount"}
-                        className="radio-group__radio-input"
-                        id="views"
-                        name="order"
-                        onChange={() => this.toggleOrder()}
-                    />
-                    <label htmlFor="views" className="radio-group__radio-label">
-                        <span className="radio-group__radio-button"></span>
-                        Order By Views
-                  </label>
-                </div>
 
-                <div className="radio-group">
-                    <input
-                        type="radio"
-                        checked={this.state.order === "date"}
-                        className="radio-group__radio-input"
-                        id="date"
-                        name="order"
-                        onChange={() => this.toggleOrder()}
-                    />
-                    <label htmlFor="date" className="radio-group__radio-label">
-                        <span className="radio-group__radio-button"></span>
-                        Order By Date
+            <div className="col-md-8">
+                <input type='text'
+                    value={this.state.term}
+                    onChange={e => this.setState({ term: e.target.value })}
+                />
+            </div>
+            <div className="col-md-6">
+                <div>
+                    <div className="radio-group">
+                        <input type="radio"
+                            checked={this.state.order === "viewCount"}
+                            className="radio-group__radio-input"
+                            id="views"
+                            name="order"
+                            onChange={() => this.toggleOrder()}
+                        />
+                        <label htmlFor="views" className="radio-group__radio-label">
+                            <span className="radio-group__radio-button"></span>
+                            Order By Views
+                         </label>
+                    </div>
+
+                    <div className="radio-group">
+                        <input
+                            type="radio"
+                            checked={this.state.order === "date"}
+                            className="radio-group__radio-input"
+                            id="date"
+                            name="order"
+                            onChange={() => this.toggleOrder()}
+                        />
+                        <label htmlFor="date" className="radio-group__radio-label">
+                            <span className="radio-group__radio-button"></span>
+                            Order By Date
                  </label>
+                    </div>
+
+                    <button type="submit">
+                        <svg className='icon'>
+                            <use xlinkHref='img/sprite.svg#icon-search' />
+                        </svg>
+                    </button>
                 </div>
-
-
             </div>
 
-
-            <button type="submit">
-                <svg className='icon'>
-                    <use xlinkHref='img/sprite.svg#icon-search' />
-                </svg>
-            </button>
         </form>
         );
     }

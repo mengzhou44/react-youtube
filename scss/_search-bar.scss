@@ -1,19 +1,16 @@
 .search-bar {
     margin: 30px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+     
     input {
         font-size: 15px;
         font-family: inherit;
         color:  $color-light-black;
         font-weight: 400;
         padding: 10px 15px; 
-        width: 50% !important;
+        width: 100%;
         background-color: $color-white;
-       
+  
         border: 1px solid rgb(204,204, 204);
         border-radius: 3px; 
           
