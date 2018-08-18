@@ -1,12 +1,21 @@
 import React from 'react';
 import _ from 'lodash';
-import VideoItem from './video-item';
+
 
 export default (props) => {
 
-    return (<div>
+    return (<ul className="video-list">
         {_.map(props.videos, video =>
-            <VideoItem key={video.etag} video={video} />)
-        }
-    </div>)
+            <li
+                key={video.etag}
+                className="video-item"
+                onClick={() => { props.onVideoSelected(video) }}
+            >
+
+                <img className="video-item__image" src={video.snippet.thumbnails.default.url} />
+
+                <div className="video-item__title" >{video.snippet.title}</div>
+            </li>)}
+    </ul>)
 }
+

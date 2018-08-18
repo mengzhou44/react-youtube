@@ -15,6 +15,10 @@ export default class SearchBar extends Component {
     }
 
     componentDidMount() {
+        this.searchVideos();
+    }
+
+    searchVideos() {
         YTSearch({ key: API_KEY, term: this.state.term }, (videos) => {
             this.props.onVidoesFound(videos);
         })
@@ -22,12 +26,15 @@ export default class SearchBar extends Component {
 
     render() {
         return (
-            <div>
+            <div className="search-bar">
                 <input type='text'
                     value={this.state.term}
                     onChange={e => this.setState({ term: e.target.value })}
                 />
-                {this.state.term}
+                <button onClick={() => this.searchVideos()}>
+                    Search
+                </button>
+
             </div>
         );
     }

@@ -1,0 +1,24 @@
+.video-list{
+    list-style: none;
+}
+
+.video-item {
+    display: flex; 
+    margin-bottom: 20px; 
+    cursor: pointer; 
+    &:hover {
+        background-color: rgba(#eee,.5);
+    }
+    transition: all, .4s; 
+
+   &__image{
+       border-radius: 3px; 
+   }
+
+   &__title{
+       margin-left: 5px; 
+       width: 100%;   
+       text-align: left;
+   }
+
+}

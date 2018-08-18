@@ -1,0 +1,17 @@
+.video-detail {
+    width: 100%;  
+    
+    &__content {
+       width: 90%;
+       margin-left: 5%;
+       
+       .details {
+           margin-top: 20px; 
+       }
+      
+    }
+  
+    border-radius: 5px; 
+    margin-bottom: 30px; 
+    cursor: pointer;
+}
