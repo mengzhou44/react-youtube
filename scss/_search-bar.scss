@@ -3,8 +3,53 @@
     text-align: center;
 
     input {
-        width: 60%;
+        font-size: 15px;
+        font-family: inherit;
+        color:  $color-orange;
+        font-weight: 400;
+        padding: 10px 15px; 
+        width: 70% !important;
+        background-color: $color-white;
+       
+        border: 1px solid $color-light-black;
+        border-top-left-radius: 3px; 
+        border-bottom-left-radius: 3px; 
+       
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        cursor: pointer;
+       
+        padding: 9px 15px;
+        text-decoration: none;
+        background-color: $color-orange;
+        
+        border: 1px solid $color-orange;
+        color: $color-white;
+       
+        transition: all .2s;
+       
+        border-top-right-radius:  3px; 
+        border-bottom-right-radius: 3px; 
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2); 
+       
+        &:hover {
+            transform: translateY(-0.3rem);
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.2); 
+            border: 1px solid $color-dark-orange;
+            color: $color-white;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px; 
+        }
+
+        &:focus {
+            outline: none; 
+        }
     }
   }
   
+ 
  

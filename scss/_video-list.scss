@@ -4,15 +4,19 @@
 
 .video-item {
     display: flex; 
+    padding: 5px; 
     margin-bottom: 20px; 
     cursor: pointer; 
     &:hover {
-        background-color: rgba(#eee,.5);
+        background-color: $color-orange;
+        color: $color-white-smoke;
     }
     transition: all, .4s; 
 
    &__image{
        border-radius: 3px; 
+       width: 100px;
+       max-height: 100px; 
    }
 
    &__title{

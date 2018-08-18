@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import YTSearch from 'youtube-api-search';
+import axios from "axios";
 
 
 const API_KEY = 'AIzaSyDDNFSGg65vFIGfiAkN94LqKxRaOPdvVfI';
@@ -19,9 +19,12 @@ export default class SearchBar extends Component {
     }
 
     searchVideos() {
-        YTSearch({ key: API_KEY, term: this.state.term }, (videos) => {
-            this.props.onVidoesFound(videos);
-        })
+
+        axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&order=viewCount&q=${this.state.term}&type=video&key=${API_KEY}`)
+            .then(response => {
+                this.props.onVidoesFound(response.data.items);
+            });
+
     }
 
     render() {
