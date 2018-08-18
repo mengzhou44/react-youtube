@@ -1,22 +1,66 @@
 .color-white {
   color: #FFF; }
 
+.icon {
+  height: 1.4rem;
+  width: 1.4rem;
+  fill: #FFF !important; }
+
+.radio-group {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 5px; }
+  .radio-group__radio-label {
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2rem; }
+  .radio-group__radio-button {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 0.2rem solid #555;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -.1rem;
+    left: 0rem; }
+    .radio-group__radio-button::after {
+      content: "";
+      display: block;
+      height: .6rem;
+      width: .6rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #555;
+      opacity: 0;
+      transition: opacity .3s; }
+  .radio-group__radio-input {
+    display: none; }
+  .radio-group__radio-input:checked ~ .radio-group__radio-label .radio-group__radio-button::after {
+    opacity: 1; }
+
 .search-bar {
   margin: 30px;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .search-bar input {
     font-size: 15px;
     font-family: inherit;
     color: #f58426;
     font-weight: 400;
     padding: 10px 15px;
-    width: 70% !important;
+    width: 50% !important;
     background-color: #FFF;
-    border: 1px solid #333;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px; }
+    border: 1px solid #cccccc;
+    border-radius: 3px; }
     .search-bar input:focus {
-      outline: none; }
+      outline: none;
+      border: 1px solid #555; }
   .search-bar button {
     cursor: pointer;
     padding: 9px 15px;
@@ -25,8 +69,7 @@
     border: 1px solid #f58426;
     color: #FFF;
     transition: all .2s;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-radius: 3px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
     .search-bar button:hover {
       transform: translateY(-0.3rem);
@@ -39,6 +82,7 @@
       outline: none; }
 
 .video-detail {
+  margin-top: 5px;
   width: 100%;
   border-radius: 5px;
   margin-bottom: 30px;
@@ -64,13 +108,21 @@
   cursor: pointer;
   transition: all, .4s; }
   .video-item:hover {
-    background-color: #f58426;
-    color: #f4f4f4; }
+    background-color: #f4f4f4; }
   .video-item__image {
     border-radius: 3px;
     width: 100px;
     max-height: 100px; }
-  .video-item__title {
+  .video-item__info {
     margin-left: 5px;
     width: 100%;
     text-align: left; }
+  .video-item__title {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .video-item__date {
+    font-size: 12px;
+    font-style: italic; }
+  .video-item__views {
+    font-size: 12px;
+    font-weight: 500; }

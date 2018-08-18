@@ -3,26 +3,39 @@
 }
 
 .video-item {
-    display: flex; 
+    display: flex;
     padding: 5px; 
     margin-bottom: 20px; 
     cursor: pointer; 
     &:hover {
-        background-color: $color-orange;
-        color: $color-white-smoke;
+        background-color: $color-white-smoke;
     }
     transition: all, .4s; 
 
    &__image{
        border-radius: 3px; 
        width: 100px;
-       max-height: 100px; 
+       max-height:100px; 
    }
 
-   &__title{
+   &__info{
        margin-left: 5px; 
        width: 100%;   
        text-align: left;
+   }
+
+   &__title {
+       font-size: 16px; 
+       margin-bottom: 10px; 
+   }
+   &__date {
+       font-size: 12px; 
+       font-style: italic;
+   }
+
+   &__views {
+       font-size: 12px; 
+       font-weight: 500; 
    }
 
 }
