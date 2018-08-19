@@ -45,37 +45,49 @@
 .search-bar {
   margin: 30px;
   text-align: center; }
-  .search-bar input {
-    font-size: 15px;
-    font-family: inherit;
-    color: #333;
-    font-weight: 400;
-    padding: 10px 15px;
-    width: 100%;
-    background-color: #FFF;
-    border: 1px solid #cccccc;
-    border-radius: 3px; }
-    .search-bar input:focus {
-      outline: none;
-      border: 1px solid #555; }
-  .search-bar button {
-    cursor: pointer;
-    padding: 9px 15px;
-    text-decoration: none;
-    background-color: #f8f8f8;
-    border: 1px solid lightgray;
-    color: #FFF;
-    transition: all .2s;
-    border-radius: 3px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-    .search-bar button:hover {
-      transform: translateY(-0.3rem);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-      color: #FFF;
+  .search-bar__search {
+    display: flex;
+    justify-content: flex-start; }
+    .search-bar__search input {
+      font-size: 15px;
+      font-family: inherit;
+      color: #333;
+      font-weight: 400;
+      padding: 10px 15px;
+      width: 90%;
+      background-color: #FFF;
+      border: 1px solid #cccccc;
       border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px; }
-    .search-bar button:focus {
-      outline: none; }
+      border-bottom-left-radius: 3px;
+      border-right: none; }
+      .search-bar__search input:focus {
+        outline: none;
+        border: 1px solid #555;
+        border-right: none; }
+    .search-bar__search button {
+      cursor: pointer;
+      padding: 9px 15px;
+      text-decoration: none;
+      background-color: #f8f8f8;
+      border: 1px solid lightgray;
+      color: #FFF;
+      transition: all .2s;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+      .search-bar__search button:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        color: #FFF;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; }
+      .search-bar__search button:focus {
+        outline: none; }
+  .search-bar__order {
+    margin-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
 
 .video-detail {
   margin-top: 5px;

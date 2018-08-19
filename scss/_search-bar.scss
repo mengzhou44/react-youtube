@@ -1,54 +1,72 @@
 .search-bar {
     margin: 30px;
     text-align: center;
-     
-    input {
-        font-size: 15px;
-        font-family: inherit;
-        color:  $color-light-black;
-        font-weight: 400;
-        padding: 10px 15px; 
-        width: 100%;
-        background-color: $color-white;
-  
-        border: 1px solid rgb(204,204, 204);
-        border-radius: 3px; 
-          
-        &:focus {
-            outline: none;
-            border: 1px solid $color-gray;
+     &__search{
 
-        }
-    }
+        display: flex; 
+        justify-content: flex-start;
 
-    button {
-        cursor: pointer;
-       
-        padding: 9px 15px;
-        text-decoration: none;
-        background-color: rgb(248,248,248);
-        
-        border: 1px solid rgb(211,211,211);
-        color: $color-white;
-       
-        transition: all .2s;
-       
-        border-radius:  3px;  
-      
-        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2); 
-       
-        &:hover {
-            transform: translateY(-0.3rem);
-            box-shadow: 0 1rem 2rem rgba($color-black, 0.2); 
-            color: $color-white;
-            border-top-left-radius: 3px;
+        input {
+            font-size: 15px;
+            font-family: inherit;
+            color:  $color-light-black;
+            font-weight: 400;
+            padding: 10px 15px; 
+            width: 90%;
+            background-color: $color-white;
+            
+            border: 1px solid rgb(204,204, 204);
+            border-top-left-radius: 3px; 
             border-bottom-left-radius: 3px; 
+            border-right: none;
+              
+            &:focus {
+                outline: none;
+                border: 1px solid $color-gray;
+                border-right: none;
+            }
         }
+    
+        button {
+            cursor: pointer;
+            padding: 9px 15px;
+            text-decoration: none;
+            background-color: rgb(248,248,248);
+            
+            border: 1px solid rgb(211,211,211);
+            color: $color-white;
+           
+            transition: all .2s;
+           
+           
+            border-top-right-radius: 3px; 
+            border-bottom-right-radius: 3px; 
 
-        &:focus {
-            outline: none; 
+            box-shadow: 0 .5rem 1rem rgba($color-black, 0.2); 
+           
+            &:hover {
+                transform: translateY(-0.3rem);
+                box-shadow: 0 1rem 2rem rgba($color-black, 0.2); 
+                color: $color-white;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px; 
+            }
+    
+            &:focus {
+                outline: none; 
+            }
         }
-    }
+     }
+
+   
+
+    &__order {
+        margin-left: 0px; 
+        display: flex; 
+        justify-content: flex-start; 
+        align-items: center;
+       
+    } 
   }
   
  
